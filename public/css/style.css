@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  height: auto;
+  color: inherit;
+}
+
+/* start-header */
+
+.header {
+  position: fixed;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(253, 17, 5);
+  color: white;
+
+  top: 0;
+  height: 3rem;
+  width: 100%;
+}
+
+.header .brand {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.brand img {
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.header ul {
+  display: flex;
+  width: 20rem;
+  flex-direction: row;
+  margin-right: 2rem;
+  justify-content: space-around;
+}
+
+.header ul li {
+  height: 3rem;
+  width: 100%;
+
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.header ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+}
+
+.header ul li a:hover {
+  height: 3rem;
+  width: 100%;
+
+  background-color: rgb(255, 255, 255);
+  color: rgb(75, 12, 12);
+}
+/* end-header */
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 3rem;
+  height: 25rem;
+  width: 100%;
+
+  background: url("../img/banner1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.change {
+  width: 2.5rem;
+  height: 100%;
+
+  border: none;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: white;
+
+  font-size: 1.5rem;
+  transition: all ease-in-out 0.5s;
+}
+
+.change:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.658);
+  transition: all ease-in-out 1s;
+}
+
+.textoB {
+  text-align: left;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.textoB p {
+  text-align: justify;
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.texto-banner {
+  text-align: justify;
+  align-self: flex-end;
+  height: 30%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.103);
+  color: white;
+}
+
+.texto-banner:hover {
+  background-color: rgba(0, 0, 0, 0.658);
+  transition: all ease-in-out 1s;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  margin-top: 3.5rem;
+}
+
+.content .updates {
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  text-align: center;
+  font-size: 2rem;
+
+  width: 100%;
+  height: auto;
+  min-height: 30rem;
+  background-color: rgb(166, 9, 2);
+  /* border-radius: 1rem; */
+  color: white;
+}
+
+.box-update {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 7rem;
+  margin-bottom: 2rem;
+}
+.box-update span {
+  border-bottom: solid 1px rgb(255, 255, 255);
+  margin-left: 0;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+
+  height: 3rem;
+  border: solid white 1rem;
+
+  padding-left: 1rem;
+
+  font-weight: bold;
+  background-color: white;
+  border: solid rgb(73, 18, 18) 2px;
+  color: rgb(166, 9, 2);
+}
+
+.title span {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+
+  justify-content: center;
+  align-self: center;
+
+  border-radius: 50%;
+  background-color: rgb(166, 9, 2);
+}
+
+.texto-update {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: 900;
+
+  color: white;
+}
+
+.box-update article {
+  /* border: solid black 0.5px; */
+  font-size: 0.8rem;
+}
+
+.box-update img {
+  padding-left: 3rem;
+  width: 10rem;
+
+  height: 5rem;
+}
+
+.content .championships {
+  width: 100%;
+  border: solid black 1px;
+  height: auto;
+  min-height: 30rem;
+}
+
+#footer {
+  width: 100%;
+  height: 6rem;
+  bottom: 0;
+
+  background-color: rgb(253, 17, 5);
+}
+
+@media (max-width: 600px) {
+  .header .brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .display-off {
+    display: none;
+  }
+  .change {
+    width: 1rem;
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .display-off {
+    display: none;
+  }
+  .change {
+    width: 1rem;
+    height: 100%;
+    font-size: 1rem;
+  }
+}
