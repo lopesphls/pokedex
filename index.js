@@ -21,7 +21,9 @@ app.get("/cadastro", (req, res) => {
   res.render("cadastro");
 });
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
   console.clear();
   console.log("Servidor rodando");
   console.log("http://localhost:3000");
