@@ -129,39 +129,59 @@
   transition: all ease-in-out 1s;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 
   height: 100vh;
-  width: 100%;
+  width: 90%;
 
   margin-top: 3.5rem;
 }
 
 .content .updates {
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
   text-align: center;
   font-size: 2rem;
 
-  width: 100%;
-  height: auto;
+  width: 40vw;
+  height: 100vh;
   min-height: 30rem;
+  margin-left: 2rem;
+
   background-color: rgb(166, 9, 2);
-  /* border-radius: 1rem; */
+  border-radius: 2rem;
   color: white;
 }
 
 .box-update {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 
-  height: 7rem;
-  margin-bottom: 2rem;
+  width: 10rem;
+  height: 13rem;
+  margin: 2rem;
+
+  border: solid rgb(255, 255, 255) 1px;
+  border-radius: 2rem;
+  box-shadow: -8px 4px 32px rgba(0, 0, 0, 0.74);
 }
 .box-update span {
   border-bottom: solid 1px rgb(255, 255, 255);
@@ -169,17 +189,22 @@
   width: 100%;
 }
 
+.box-img {
+  height: 100%;
+  width: 100%;
+}
+
 .title {
+  position: static;
   display: flex;
 
   height: 3rem;
-  border: solid white 1rem;
+  width: 100%;
 
   padding-left: 1rem;
 
   font-weight: bold;
   background-color: white;
-  border: solid rgb(73, 18, 18) 2px;
   color: rgb(166, 9, 2);
 }
 
@@ -207,23 +232,34 @@
   color: white;
 }
 
-.box-update article {
-  /* border: solid black 0.5px; */
-  font-size: 0.8rem;
-}
-
 .box-update img {
-  padding-left: 3rem;
-  width: 10rem;
-
-  height: 5rem;
+  /* background-position: center; */
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
-.content .championships {
-  width: 100%;
-  border: solid black 1px;
-  height: auto;
+.content .favoritos {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 2rem;
+
+  width: 40vw;
+  height: 100vh;
   min-height: 30rem;
+  margin-left: 2rem;
+
+  background-color: rgb(166, 9, 2);
+  border-radius: 2rem;
+  color: white;
 }
 
 #footer {
@@ -232,22 +268,6 @@
   bottom: 0;
 
   background-color: rgb(253, 17, 5);
-}
-
-@media (max-width: 600px) {
-  .header .brand {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .display-off {
-    display: none;
-  }
-  .change {
-    width: 1rem;
-    height: 100%;
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 600px) {
