@@ -1,5 +1,20 @@
 <%- include('partials/header') %>
 
-<h1>Cadastrar</h1>
+<main>
+  <div class="box">
+    <h1>Cadastrar</h1>
+    <form class="formulario" action="/cadastrar" method="post">
+      <label for="">Nome:</label>
+      <input type="text" name="nome" required />
+      <label for="">Tipo: </label>
+      <input type="text" name="tipo" required />
+      <label for="">Fraqueza:</label>
+      <input type="text" name="fraqueza" required />
+      <label for="">URL imagem: </label>
+      <input type="url" name="img" placeholder="https://example.com" required />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</main>
 
 <%- include("partials/footer") %>

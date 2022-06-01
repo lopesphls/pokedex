@@ -1,37 +1,21 @@
 <%- include('partials/header') %>
 <main>
-  <div class="content">
+  <div class="container">
+    <h1 class="title"><span></span> Catalogo</h1>
+    <span class="linha"></span>
     <section class="favoritos">
-      <div class="title"><span></span> Favoritos</div>
+      <% pokedex.forEach(pet => { %>
+      <div class="box-update">
+        <h3 class="texto-update"><%= pet.nome %></h3>
+        <span></span>
+        <img src="<%= pet.img %>" alt="" />
+        <div class="btn">
+          <span class="linha"></span>
+          <input type="button" value="editar" src="#" />
+          <input type="button" value="excluir" src="#" />
+        </div>
+      </div>
+      <% }); %>
     </section>
-    <section class="updates">
-      <div class="title"><span></span> Cadastrados</div>
-      <div class="box-update">
-        <h1 class="texto-update">Pokemon</h1>
-        <span></span>
-      </div>
-      <div class="box-update">
-        <h1 class="texto-update">Pikachu</h1>
-        <span></span>
-        <img src="http://www.smashbros.com/images/og/pikachu.jpg" alt="" />
-      </div>
-      <div class="box-update">
-        <h1 class="texto-update">Pokemon</h1>
-        <span></span>
-      </div>
-      <div class="box-update">
-        <h1 class="texto-update">Pokemon</h1>
-        <span></span>
-      </div>
-      <div class="box-update">
-        <h1 class="texto-update">Pokemon</h1>
-        <span></span>
-      </div>
-      <div class="box-update">
-        <h1 class="texto-update">Pokemon</h1>
-        <span></span>
-      </div>
-    </section>
-  </div>
 </main>
 <%- include("partials/footer") %>

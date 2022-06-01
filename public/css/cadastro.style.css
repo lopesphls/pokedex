@@ -1,0 +1,34 @@
+.box {
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5.5rem;
+
+  background-color: #fff;
+  border-radius: 6rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formulario input {
+  margin-bottom: 1rem;
+  width: 15rem;
+}
+.formulario button {
+  background-color: rgb(185, 12, 12);
+  color: white;
+  width: 50%;
+  height: 2rem;
+  align-self: center;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
