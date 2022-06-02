@@ -28,17 +28,17 @@ let pokedex = [
   },
   {
     id: 3,
-    nome: "Pikachu",
-    tipo: "Eletrico",
-    fraqueza: "Terra",
-    img: "http://www.smashbros.com/images/og/pikachu.jpg",
+    nome: "Bulbasaur",
+    tipo: "Planta",
+    fraqueza: "Fogo",
+    img: "http://pm1.narvii.com/6738/e6b5aee01669689a45bec15dd7c1551da653ae4bv2_00.jpg",
   },
   {
     id: 4,
-    nome: "Charmander",
-    tipo: "Fogo",
-    fraqueza: "Água",
-    img: "https://pm1.narvii.com/6211/28844b37fc102d346ca78b48f3da1b7e8f014533_hq.jpg",
+    nome: "Squirtle",
+    tipo: "Água",
+    fraqueza: "Eletrico",
+    img: "https://mestrepokemon.com/wp-content/uploads/2019/11/Squirtle-Pok%C3%A9dex.jpg",
   },
 ];
 
