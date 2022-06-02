@@ -12,8 +12,12 @@
           <p><strong>Tipo: </strong> <%= pet.tipo %></p>
           <p><strong>Fraqueza: </strong> <%= pet.fraqueza %></p>
           <div class="btn">
-            <input type="button" value="editar" src="#" />
-            <input type="button" value="excluir" src="#" />
+            <a href="/editar/<%= pet.id %>">
+              <input type="button" value="editar" src="/" />
+            </a>
+            <a href="/deletar/<%= pet.id %>">
+              <input type="button" value="excluir" src="/" />
+            </a>
           </div>
       </div>
       <% }); %>

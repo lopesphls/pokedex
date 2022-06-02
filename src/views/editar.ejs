@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+
+<section class="background">
+  <div class="box">
+    <h1>Editar pokemon - <%= pokedex[id].id %></h1>
+    <form
+      class="formulario"
+      action="/editar/<%= pokedex[id].id %>"
+      method="post"
+    >
+      <label for="">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        value="<%= pokedex[id].nome  %> "
+        required
+      />
+      <label for="">Tipo: </label>
+      <input
+        type="text"
+        name="tipo"
+        value="<%= pokedex[id].tipo  %> "
+        required
+      />
+      <label for="">Fraqueza:</label>
+      <input
+        type="text"
+        name="fraqueza"
+        value="<%= pokedex[id].fraqueza  %> "
+        required
+      />
+      <label for="">URL imagem: </label>
+      <input
+        type="url"
+        name="img"
+        value="<%= pokedex[id].img
+        %> "
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<%- include("partials/footer") %>

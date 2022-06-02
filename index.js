@@ -49,11 +49,34 @@ app.get("/", (req, res) => {
 app.get("/cadastro", (req, res) => {
   res.render("cadastro");
 });
+app.get("/editar/:id", (req, res) => {
+  let id = req.params.id;
+  id = id - 1;
+
+  res.render("editar", { pokedex, id });
+});
 
 app.post("/cadastrar", (req, res) => {
-  const pokemon = req.body;
+  const id = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
+
+  res.redirect("/");
+});
+app.post("/editar/:id", (req, res) => {
+  let id = req.params.id;
+  id = id - 1;
+
+  const pokemon = req.body;
+  pokedex[id] = pokemon;
+
+  res.redirect("/");
+});
+
+app.get("/deletar/:id", (req, res) => {
+  const pokemon = req.params.id;
+  console.log(pokemon);
+  pokedex = pokedex.filter((p) => p.id != pokemon);
 
   res.redirect("/");
 });
