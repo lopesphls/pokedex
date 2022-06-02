@@ -8,12 +8,13 @@
       <div class="box-update">
         <h3 class="texto-update"><%= pet.nome %></h3>
         <span></span>
-        <img src="<%= pet.img %>" alt="" />
-        <div class="btn">
-          <span class="linha"></span>
-          <input type="button" value="editar" src="#" />
-          <input type="button" value="excluir" src="#" />
-        </div>
+          <img src="<%= pet.img %>" alt="<%= pet.nome %>" />
+          <p><strong>Tipo: </strong> <%= pet.tipo %></p>
+          <p><strong>Fraqueza: </strong> <%= pet.fraqueza %></p>
+          <div class="btn">
+            <input type="button" value="editar" src="#" />
+            <input type="button" value="excluir" src="#" />
+          </div>
       </div>
       <% }); %>
     </section>

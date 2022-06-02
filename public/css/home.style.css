@@ -11,11 +11,39 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/cadastrar.jpeg);
+
+  background: #bc1c2c;
   background-position: center;
   background-size: cover;
 
-  height: 100vh;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5rem;
+  min-height: 100vh;
+}
+
+.container h1 {
+  align-self: start;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.linha {
+  border-bottom: solid 1px rgb(255, 255, 255);
+  z-index: 10;
+  width: 100%;
+}
+
+.favoritos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .box-update {
@@ -35,14 +63,10 @@ main {
   border-radius: 2rem;
   box-shadow: -8px 4px 32px rgba(0, 0, 0, 0.74);
 }
+
 .box-update span {
   border-bottom: solid 1px rgb(255, 255, 255);
   margin-left: 0;
-  width: 100%;
-}
-
-.box-img {
-  height: 100%;
   width: 100%;
 }
 
@@ -53,7 +77,7 @@ main {
   font-size: 2rem;
 
   font-weight: bold;
-  color: rgb(253, 17, 5);
+  color: rgb(255, 255, 255);
 }
 
 .title span {
@@ -65,58 +89,82 @@ main {
   align-self: center;
 
   border-radius: 50%;
-  background-color: rgb(253, 17, 5);
+  background-color: rgb(255, 255, 255);
 }
 
 .texto-update {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 0.5rem;
+  padding-bottom: 1rem;
   word-wrap: normal;
 
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
 
   color: white;
 }
 
 .box-update img {
-  /* background-position: center; */
   height: 22rem;
   width: 100%;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }
-
-.content .favoritos {
-  overflow-y: auto;
-  overflow-x: hidden;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  text-align: center;
-  font-size: 2rem;
-
-  width: 40vw;
-  height: 100vh;
-  min-height: 30rem;
-  margin-left: 2rem;
-
-  background-color: rgb(166, 9, 2);
-  border-radius: 2rem;
-  color: white;
+.box-update img:hover {
+  background: rgb(0, 0, 0);
 }
 
-#footer {
-  width: 100%;
-  height: 6rem;
-  bottom: 0;
+.box-update p {
+  display: none;
+}
 
+.box-update:hover {
+  margin-top: 5.5rem;
+
+  width: 23rem;
+  height: 26rem;
+  margin: 2rem;
+
+  z-index: 3;
+  border: 1px solid rgb(253, 17, 5);
+
+  border-radius: 2rem;
+  box-shadow: -8px 4px 32px rgba(0, 0, 0, 0.74);
+}
+
+.box-update p:hover {
+  display: flex;
+  position: relative;
+  bottom: 14rem;
+  height: 22rem;
+  width: 100%;
+  justify-self: flex-start;
+  align-self: flex-start;
+  z-index: 1;
+  background-color: black;
+}
+
+.btn {
+  margin-top: -3rem;
+}
+
+.btn input {
+  width: 6rem;
+  height: 2rem;
+  background-color: #fff;
+  border: 1px solid rgb(253, 17, 5);
+  border-radius: 1rem;
+}
+.btn input:hover {
+  width: 6rem;
+  height: 2rem;
   background-color: rgb(253, 17, 5);
+  border: 1px solid rgb(253, 17, 5);
+  color: #fff;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
 }
 
 @media (max-width: 600px) {
@@ -125,8 +173,13 @@ main {
     display: flex;
     justify-content: center;
   }
-  .display-off {
-    display: none;
+
+  main {
+    width: auto;
+    background: #bc1c2c;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
   }
   .change {
     width: 1rem;
