@@ -57,7 +57,7 @@ app.get("/editar/:id", (req, res) => {
 });
 
 app.post("/cadastrar", (req, res) => {
-  const id = req.body;
+  const pokemon = req.body;
   pokemon.id = pokedex.length + 1;
   pokedex.push(pokemon);
 
