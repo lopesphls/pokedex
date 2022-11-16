@@ -11,7 +11,7 @@ const Navbar = () => {
 	return (
 		<header className='menu'>
 			<nav className='navbar'>
-				<Link to='/' className='brand'>
+				<Link to='/' className='brand' onClick={() => setMenu(true)}>
 					<img src={pokebola} alt='' />
 					Pokédex
 				</Link>
@@ -22,10 +22,18 @@ const Navbar = () => {
 				)}
 			</nav>
 			<div className={menu ? 'menu-none' : 'menu-mobile'}>
-				<Link to='/'>Texto</Link>
-				<Link to='/'>Texto</Link>
-				<Link to='/'>Texto</Link>
-				<Link to='/'>Texto</Link>
+				<Link to='/' onClick={() => setMenu(true)}>
+					Texto
+				</Link>
+				<Link to='/' onClick={() => setMenu(true)}>
+					Texto
+				</Link>
+				<Link to='/' onClick={() => setMenu(true)}>
+					Texto
+				</Link>
+				<Link to='/' onClick={() => setMenu(true)}>
+					Texto
+				</Link>
 			</div>
 		</header>
 	)
